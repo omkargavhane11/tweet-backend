@@ -21,7 +21,9 @@ mongoose.connect(process.env.MONGO_URL, {
 
 // middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "https://mytweet.netlify.app" || "http://localhost:8800"
+}));
 app.use(express.urlencoded({ extended: true }));
 
 
