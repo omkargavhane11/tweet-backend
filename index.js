@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cors({
     origin: "https://mytweet.netlify.app" || "http://localhost:8800"
 }));
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
