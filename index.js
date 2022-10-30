@@ -12,6 +12,7 @@ dotenv.config(); // getting access to files in ".env" folder
 const app = express();
 const PORT = process.env.PORT;
 
+
 // connecting to mongoDB
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
